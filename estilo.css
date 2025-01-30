@@ -1,0 +1,260 @@
+
+.texto {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3rem; 
+    line-height: 1.6;
+    color: #333;
+    font-weight: 400; 
+    letter-spacing: 0.5px; 
+}
+.texto {
+    text-align: justify; 
+}
+.text-box {
+    background-color: #abb2b9a9; /* Fondo blanco */
+    padding: 20px; /* Espacio alrededor del texto */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 100px; /* Separación entre el título y el texto */
+    max-width: 900px; /* O el valor que desees */
+    width: 100%; /* Asegura que ocupe todo el espacio disponible hasta el max-width */
+    margin: 40px auto; /* Centra el contenedor */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background:url(fotos/sobremi.jpg)center center/cover no-repeat ;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-color: #abb2b9c7;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+}
+header p {
+    margin: 5px 0;
+    font-style: italic;
+}
+.tabs-container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 20px;
+}
+.tabs {
+    display: inline-flex;
+    justify-content: center;
+    background-color: #abb2b9c7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+.tab:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.content {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-left: 20px;
+}
+.active {
+    display: block;
+}
+/*footer*/
+footer {
+    text-align: center; 
+    padding: 10px; 
+    background-color: #333; 
+    color: #fff; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    font-size: 14px; 
+}
+
+footer p {
+    margin: 0;
+}
+
+/*LABORAL*/
+.job {
+    background-color: #abb2b9d3;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150%;
+    max-width: 900px;
+    margin: 5 auto;
+    transition: all 0.3s ease;
+}
+.job:hover {
+    transform: scale(1.05); 
+    background-color: #85929e; 
+}
+.job h3 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+.job p {
+    margin: 5px 0;
+}
+.map-container {
+    margin-top: 10px;
+}
+iframe {
+    border: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+a:hover {
+    color: #555; 
+}
+.Laboral{
+    background: url(fotos/laboralfondo.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+.titulolaboral{
+    color: #1c2833;
+}
+/*academico*/
+.tituloacademico{
+    color: #d0d0d0;
+}
+.Academico{
+    background: url(fotos/academico.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+/*contacto*/
+.contacto{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('fotos/fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+#contact {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#contact-button {
+    position: absolute;
+    top: 80px; 
+    right: -900px; 
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#contact-button:hover {
+    background-color: #34495e;
+    color: white;
+}
+.contact-info {
+    position: absolute;
+    left: -900px; 
+    top: 35%; 
+    transform: translateY(-50%); 
+    font-size: 1.2rem;
+    color: #1c2833;
+    text-align: left; 
+    padding-left: 20px; 
+}
+.contact-info h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #abb2b9b9;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px; 
+    display: none; 
+    z-index: 1000; 
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+}
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+#contact-form button {
+    background-color: #2e4053;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    max-width: 280px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#contact-form button:hover {
+    background-color: #5d6d7e;
+}
+
+/*mapas de google*/
+.map-container iframe {
+    filter: invert(90%) hue-rotate(180deg);
+}
+/*habilidades*/
+
+

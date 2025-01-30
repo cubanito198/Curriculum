@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+       
+       .habilidades {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url(fotos/mitad.jpg) center /cover no-repeat ;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .habilidades-container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 85vh;
+            gap: 45px;
+        }
+        .habilidad {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        .habilidad img {
+            width: 800px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+        .habilidad img:hover {
+            transform: scale(1.05); 
+            filter: brightness(1.2); 
+        }
+        .habilidad p {
+            width: 45%;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .habilidad:first-child {
+            flex-direction: row-reverse;
+        }
+        .coches-text {
+            font-family: 'Roboto Slab', serif; 
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #ffffff; 
+        }
+        .coches-text {
+            font-weight: 500; 
+            letter-spacing: 0.5px; 
+        }
+        .setup-text {
+            font-family: 'Poppins', sans-serif; 
+            font-size: 1.3rem; 
+            line-height: 1.6;
+            color: #eeeeee; 
+            font-weight: 400; 
+            letter-spacing: 0.5px; 
+        }
+        .setup-text {
+            text-align: justify; 
+        }
+    </style>
+</head>
+<body class="habilidades">
+    <div class="habilidades-container">
+        <div class="habilidad" style="grid-column: 1 / 2; grid-row: 1 / 2;">
+            <img src="fotos/steup.jpg" alt="Setup Gaming">
+            <p class="setup-text">Desde hace años me ha gusatdo el hardware. El abrir mi ordenador y empezar a tocar cada pieza, ver todo de cerca,
+               editarlo a mi gusto y dejarlo impecable.
+               Pero no solo me gusta eso, también me encanta aplicar este enfoque a mis setups.
+               Como puedes ver en la imagen, mi habitación refleja esa estética minimalista que me gusta. 
+                Además, el diseño web tambien es algo que me gusta. Me encanta cómo, al igual que en mi habitación, puedo crear espacios limpios, organizados, que 
+                cuando ves una web asi, solo el ser asi ya te atrae.</p>
+        </div>
+        <div class="habilidad" style="grid-column: 2 / 3; grid-row: 2 / 3;">
+            <img src="fotos/saxo.jpg" alt="Coche de Rally">
+            <p class="coches-text">Desde que tengo memoria, los coches han sido una de mis mayores pasiones. 
+                Me encanta todo lo relacionado con el mundo de los rallyes. 
+                No hay nada como salir a dar una vuelta con mi coche, que es el de la imagen, recorriendo tramos de montaña.
+                 Con un coche antiguo, como el mío, la experiencia es aún más intensa, por que al final es un coche antiguo que te da muchas sensaicones.
+                  La mecánica es algo que me fascina. Tener un coche viejo implica aprender constantemente, porque siempre surgen cosas que se rompen o necesitan ajustes.
+                  El tener un coche asi, no paras nunca de hacerle cosas y si te gusta disfrutas como nadie, pero tambien tiene su frustracion.  
+                 </p>
+        </div>
+    </div>
+</body>
+</html>

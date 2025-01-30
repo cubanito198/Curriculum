@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum de Luis Alejandro Sánchez Díaz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css"> 
+    <style>
+        .intro {
+            text-align: center;
+            position: absolute;
+            top: 20;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s ease-out;
+        }
+
+        .intro img {
+            width: 100vw; /* Ocupa toda la pantalla */
+            height: 100vh; /* Ocupa toda la pantalla */
+            object-fit: cover;
+        }
+
+        .intro button {
+            background-color:#d0d3d4;
+            color: #17202a;
+            font-size: 1.2rem;
+            border: none;
+            padding: 20px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 0px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .intro button:hover {
+            background-color: #34495e;
+        }
+        </style>
+</head>
+<body>
+    <div class="intro">
+        <img src="fotos/1.jpg" alt="Imagen sobre mí">
+        <button id="startButton">Ver mi Curriculum</button>
+    </div>
+    <header>
+        <h1>Luis Alejandro Sánchez Díaz</h1>
+        
+    </header>
+    
+    <div class="tabs-container">
+        <div class="tabs">
+            <a href="habilidades.html"class="tab" >Habilidades</a>
+            <a href="historiallaboral.html" class="tab">Historial Laboral</a>
+            <a href="historialacademico.html"class="tab" >Historial Académico</a>
+            <a href="contacto.html"class="tab" >Contacto</a>
+        </div>
+    </div>
+    <div>
+        <div class="text-box">
+            <h2 style="text-align: center;">Sobre mi</h2>
+            <p class="texto">
+                Soy una persona que no le gusta parar. Me encanta viajar, hacer cosas y conocer nuevos lugares. 
+                Siempre estoy buscando nuevas experiencias, pero cuando tengo que trabajar me pongo, aunque a veces me cueste, me siento capaz de ponerme las pilas con mucha paciencia.
+                Y aunque no siempre me guste, creo que esa paciencia es algo que me viene bien, porque me ayuda a seguir adelante.
+                Mis amistades las cuido mucho, son parte importante de mi vida. 
+                Me considero una persona curiosa, y eso tiene su ventaja porque siempre estoy aprendiendo algo nuevo.
+                No todos los días, pero casi siempre. Esa curiosidad me mantiene en constante evolución y me empuja a descubrir cosas que quizás otros no se plantean.
+                Lo que más me apasiona en este mundo son los coches.
+                No hay nada que me guste más que todo lo relacionado con ellos, desde la mecánica hasta la conducción. 
+                Es algo que me llena de energía,
+                Soy muy ordenado, tanto en mi vida como en mi espacio. Ese orden me lleva también a ser bastante limpio, algo que considero clave. A veces soy algo reservado, pero eso también me da espacio para reflexionar y centrarme en lo que realmente importa.
+                 Y lo más importante, me considero responsable y maduro para mi edad. Creo que esas cualidades son las que me definen y me han ayudado a crecer como persona.</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        };
+        document.getElementById('startButton').addEventListener('click', function() {
+            // Animación de subida de la imagen
+            document.querySelector('.intro').style.transform = 'translateY(-100%)';
+
+            // Mostrar el contenido después de la animación
+            setTimeout(function() {
+                document.getElementById('content').classList.add('show');
+            }, 1000); // Espera un segundo para que se complete la animación
+        });
+
+    </script>
+</body>
+<footer>
+    <p>&copy; 2025 Luis Alejandro Sánchez Díaz. Todos los derechos reservados.</p>
+</footer>
+</html>
